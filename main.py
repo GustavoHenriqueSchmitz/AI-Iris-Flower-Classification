@@ -21,19 +21,25 @@ model = keras.Sequential([
     keras.layers.Dense(3, activation='softmax')
 ])
 
+# Compile the model
 model.compile(
-    loss='categorical_crossentropy',
-    optimizer='adam',
-    metrics=['accuracy']
+    loss='categorical_crossentropy', # Loss function
+    optimizer='adam', # Optimizer
+    metrics=['accuracy'] # Metric to monitor
 )
 
+# Train the model
 history = model.fit(x_train, y_train, epochs=300, validation_split = 0.2)
+
+# Evaluate the model on the test data
 test_loss, test_acc = model.evaluate(x_test, y_test, verbose=2)
 
+# Print the test results
 print("================= Test Results ==================")
 print(f"Loss: {test_loss} | Accurate: {test_acc}")
 print("=================================================")
 
+# Make a prediction on a new data point
 predictions = model.predict(pd.DataFrame([[5.3, 3.7, 1.5, 0.2]]))
 for counter, prediction in enumerate(predictions[0]):
     if counter == 0:
