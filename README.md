@@ -8,7 +8,12 @@ A classification AI model, that basing on the width and length of the sepals and
 - TensorFlow
 
 ## How to test it?
-First install the necessary dependencies:
+**1 -** First clone the project:
+```
+git clone https://github.com/GustavoHenriqueSchmitz/Insurance-Costs-Prediction-AI.git
+```
+
+**2 -** First install the necessary dependencies:
 ```
 pip install -r requirements.txt
 ```
