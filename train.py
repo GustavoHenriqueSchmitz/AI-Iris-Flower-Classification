@@ -29,7 +29,7 @@ model.compile(
 )
 
 # Train the model
-history = model.fit(x_train, y_train, epochs=300, validation_split = 0.2)
+history = model.fit(x_train, y_train, epochs=300, validation_split=0.2)
 
 # Evaluate the model on the test data
 test_loss, test_acc = model.evaluate(x_test, y_test, verbose=2)
@@ -39,24 +39,17 @@ print("================= Test Results ==================")
 print(f"Loss: {test_loss} | Accurate: {test_acc}")
 print("=================================================")
 
+# Save the model
 while True:
-    answer = str(input("According the results, do you want to continue and save the model for use [y/n]: ")).lower()
-    if answer != "n" and answer != "y":
-        print("Digit a valid answer please.")
-        continue
-    else:
+    answer = input("According to the results, do you want to continue and save the model for use [y/n]: ").lower()
+    if answer not in ["y", "n"]:
+        print("Please enter a valid answer.")
+    elif answer == "y":
         print("Saving Model...")
-        # Save the model
-        model.save('IRIS_Classification_model')
+        # Save the model in .h5 format
+        model.save('IRIS_Classification_model.h5')
         print("Model saved.")
         break
-
-# # Make a prediction on a new data point
-# predictions = model.predict(pd.DataFrame([[5.3, 3.7, 1.5, 0.2]]))
-# for counter, prediction in enumerate(predictions[0]):
-#     if counter == 0:
-#         print(f"Iris-setosa: {prediction * 100}")
-#     elif counter == 1:
-#         print(f"Iris-versicolor: {prediction * 100}")
-#     else:
-#         print(f"Iris-virginica: {prediction * 100}")
+    else:
+        print("Model not saved.")
+        break
