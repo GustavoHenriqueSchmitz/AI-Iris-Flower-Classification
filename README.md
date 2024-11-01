@@ -1,2 +1,22 @@
 # AI-Iris-Flower-Classification
-A machine learning project for study purposes, that basing on the width and length of the sepals and petals of an Iris flower, identify the specie.
+
+## About the model
+A classification AI model, that basing on the width and length of the sepals and petals of an Iris flower, identify the specie. Between setosa, versicolor and virginica.
+
+## Used technologies
+- Python
+- TensorFlow
+
+## How to test it?
+First use pip install in the requirements.txt ```pip install -r requirements.txt``` file to install the libraries with their respective versions to run the project.
+After installing the required libraries, just execute the main python file ```python main.py```.
+
+**Note:** If you're having problems to execute the project, check the version of the libraries especified in the **requirements.txt** file, if they are equal to the versions especified
+in the **requirements.txt** file. If some library is different, you may need to reinstall it with the correct version.
+
+## Author
+**Gustavo Henrique Schmitz**
+
+**Linkedin:** https://www.linkedin.com/in/gustavo-henrique-schmitz  
+**Portfolio:** https://gustavohenriqueschmitz.com  
+**Email:** gustavohenriqueschmitz568@gmail.com  
