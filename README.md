@@ -8,11 +8,16 @@ A classification AI model, that basing on the width and length of the sepals and
 - TensorFlow
 
 ## How to test it?
-First use pip install in the requirements.txt ```pip install -r requirements.txt``` file to install the libraries with their respective versions to run the project.
-After installing the required libraries, just execute the main python file ```python main.py```.
+First use pip install in the requirements.txt
+```
+pip install -r requirements.txt
+```
+File to install the libraries with their respective versions to run the project.
 
-**Note:** If you're having problems to execute the project, check the version of the libraries especified in the **requirements.txt** file, if they are equal to the versions especified
-in the **requirements.txt** file. If some library is different, you may need to reinstall it with the correct version.
+After installing the required libraries, just run the main python file:
+```
+python main.py
+```
 
 ## Author
 **Gustavo Henrique Schmitz**
