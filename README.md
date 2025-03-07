@@ -7,6 +7,9 @@ A classification AI model, that basing on the width and length of the sepals and
 - Python
 - TensorFlow
 
+## Project Video
+[![Xsky Demo](https://img.youtube.com/vi/3s-eXq6pMLw/0.jpg)](https://www.youtube.com/watch?v=3s-eXq6pMLw)
+
 ## How to test it?
 **1 -** First clone the project:
 ```
